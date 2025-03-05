@@ -10,11 +10,18 @@
         ],
         "module": "ESNext",
         "skipLibCheck": true,
-        "baseUrl": ".",
+        /* Aliases */
+        "baseUrl": "./",
         "paths": {
-            "@/*": [
-                "./src/*"
-            ]
+            "@infrastructure": [
+                "./src/infrastructure/http"
+            ],
+            "@adapters/hotel": [
+                "src/adapters/hotel"
+            ],
+            "@use-cases/hotel": [
+                "src/use-cases/hotel"
+            ],
         },
         /* Bundler mode */
         "moduleResolution": "bundler",

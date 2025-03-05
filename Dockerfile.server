@@ -1,0 +1,8 @@
+FROM node:20-alpine
+
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN  yarn
+COPY db.json .
+EXPOSE 3000
+CMD ["npx", "json-server", "--watch", "db.json", "--port", "3000"]

@@ -1,5 +1,5 @@
 import { CONNECTION_PROBLEM_RESPONSE, REQUEST_DURATION, TIMEOUT_RESPONSE } from './constants'
-import { ErrorBuilder, HeadersBuilder, UrlBuilder, MockResponseFactory } from './builders'
+import { ErrorBuilder, HeadersBuilder, UrlBuilder } from './builders'
 
 export interface IHttp<DomainService extends GeneralDomainService> {
     request<Service extends GeneralService, MockResponse = unknown>(
@@ -35,7 +35,6 @@ interface GeneralDomainService {
 }
 
 export class Http<DomainService extends GeneralDomainService> implements IHttp<DomainService> {
-    private mockResponseFactory: MockResponseFactory
     private headersBuilder: HeadersBuilder
     private domainService: DomainService
     private errorBuilder: ErrorBuilder
@@ -47,7 +46,6 @@ export class Http<DomainService extends GeneralDomainService> implements IHttp<D
         domainService: DomainService,
         options: HttpOptions = {}
     ) {
-        this.mockResponseFactory = new MockResponseFactory()
         this.headersBuilder = new HeadersBuilder()
         this.errorBuilder = new ErrorBuilder()
         this.urlBuilder = new UrlBuilder()
@@ -56,12 +54,6 @@ export class Http<DomainService extends GeneralDomainService> implements IHttp<D
     }
 
     private async handleResponse(res: Response): Promise<Response | unknown> {
-        if (res.type === "opaque") {
-            const mockResponse = this.mockResponseFactory.getMockResponse(this.url)
-            if (mockResponse) {
-                return mockResponse
-            }
-        }
         if (res.ok) {
             return res.json()
         } else {
@@ -93,10 +85,10 @@ export class Http<DomainService extends GeneralDomainService> implements IHttp<D
         try {
             const response = await fetch(this.url, {
                 body: JSON.stringify(requestBody),
-                method,
                 headers: this.headersBuilder
                     .add("Content-Type", "application/json")
                     .build(),
+                method,
                 signal: controller.signal,
             })
             return this.handleResponse(response)

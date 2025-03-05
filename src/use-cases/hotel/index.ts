@@ -1,9 +1,9 @@
-import { Http } from "@/infrastructure/http"
 
 import type { HotelServices } from "./domain-services"
 import { hotelServices } from "./domain-services"
 import { HotelRepository } from "./repository"
 import HotelInteractor from "./interactor"
+import { Http } from "@infrastructure"
 
 
 export * from "./domain-services"

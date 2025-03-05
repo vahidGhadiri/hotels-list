@@ -1,4 +1,4 @@
-import { IHttp } from "@/infrastructure/http"
+import { IHttp } from "@infrastructure"
 
 import { HotelServices } from "../domain-services"
 import { HotelData } from "../entities"
@@ -27,6 +27,17 @@ export class HotelRepository implements IHotelRepository {
         return this.http.request({
             serviceName: "getHotelDetail",
             method: "GET",
+        }, {
+            responseBody: {
+                description: "1",
+                id: 1,
+                location: {
+                    lat: 1,
+                    long: 1,
+                },
+                stars: 1
+            }
         })
+
     };
 }
