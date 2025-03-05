@@ -1,0 +1,304 @@
+{
+    "hotels": [
+        {
+            "id": 1,
+            "name": "Homa",
+            "description": "Tehran Homa Hotel, one of the most prestigious five-star hotels in the capital.",
+            "location": {
+                "long": 50.123,
+                "lat": 35.689
+            },
+            "stars": 5
+        },
+        {
+            "id": 2,
+            "name": "Eram",
+            "description": "Eram Hotel in Shiraz, offering luxurious rooms and excellent services.",
+            "location": {
+                "long": 53.767,
+                "lat": 29.609
+            },
+            "stars": 4
+        },
+        {
+            "id": 3,
+            "name": "Parsian Azadi",
+            "description": "A world-class five-star hotel in the heart of Tehran with breathtaking views.",
+            "location": {
+                "long": 51.395,
+                "lat": 35.721
+            },
+            "stars": 5
+        },
+        {
+            "id": 4,
+            "name": "Esteghlal",
+            "description": "Esteghlal Hotel, a luxurious stay in Tehran with modern amenities.",
+            "location": {
+                "long": 51.399,
+                "lat": 35.748
+            },
+            "stars": 4
+        },
+        {
+            "id": 5,
+            "name": "Laleh International",
+            "description": "One of the most elegant and comfortable hotels in Tehran.",
+            "location": {
+                "long": 51.425,
+                "lat": 35.726
+            },
+            "stars": 5
+        },
+        {
+            "id": 6,
+            "name": "Kish Grand",
+            "description": "A popular hotel on Kish Island with exceptional hospitality.",
+            "location": {
+                "long": 53.974,
+                "lat": 26.532
+            },
+            "stars": 4
+        },
+        {
+            "id": 7,
+            "name": "Caspian",
+            "description": "A five-star hotel located by the Caspian Sea, offering premium services.",
+            "location": {
+                "long": 53.291,
+                "lat": 36.621
+            },
+            "stars": 5
+        },
+        {
+            "id": 8,
+            "name": "Tehran International",
+            "description": "International quality services with a comfortable stay in Tehran.",
+            "location": {
+                "long": 51.314,
+                "lat": 35.689
+            },
+            "stars": 5
+        },
+        {
+            "id": 9,
+            "name": "Setareh",
+            "description": "Setareh Hotel in Isfahan with modern architecture and services.",
+            "location": {
+                "long": 51.674,
+                "lat": 32.647
+            },
+            "stars": 4
+        },
+        {
+            "id": 10,
+            "name": "Shiraz Palace",
+            "description": "A luxurious hotel in Shiraz, featuring high-end amenities and services.",
+            "location": {
+                "long": 53.651,
+                "lat": 29.619
+            },
+            "stars": 5
+        },
+        {
+            "id": 11,
+            "name": "Alborz",
+            "description": "Alborz Hotel in Tehran, with a blend of traditional and modern services.",
+            "location": {
+                "long": 51.370,
+                "lat": 35.703
+            },
+            "stars": 4
+        },
+        {
+            "id": 12,
+            "name": "Tehran Parsian",
+            "description": "Elegant rooms and exquisite services await you at Tehran Parsian Hotel.",
+            "location": {
+                "long": 51.294,
+                "lat": 35.699
+            },
+            "stars": 4
+        },
+        {
+            "id": 13,
+            "name": "Saffron",
+            "description": "Experience a beautiful stay at Saffron Hotel in Mashhad.",
+            "location": {
+                "long": 59.607,
+                "lat": 36.315
+            },
+            "stars": 3
+        },
+        {
+            "id": 14,
+            "name": "Shahrvand",
+            "description": "Shahrvand Hotel in Tehran, offering comfortable rooms and great amenities.",
+            "location": {
+                "long": 51.368,
+                "lat": 35.694
+            },
+            "stars": 4
+        },
+        {
+            "id": 15,
+            "name": "Sama",
+            "description": "Sama Hotel in Kerman, providing affordable and convenient accommodations.",
+            "location": {
+                "long": 57.079,
+                "lat": 30.283
+            },
+            "stars": 3
+        },
+        {
+            "id": 16,
+            "name": "Kourosh",
+            "description": "Kourosh Hotel in Ahvaz, combining modern comforts with traditional Iranian warmth.",
+            "location": {
+                "long": 48.671,
+                "lat": 31.313
+            },
+            "stars": 4
+        },
+        {
+            "id": 17,
+            "name": "Darya",
+            "description": "Located near the Caspian Sea, Darya Hotel offers beautiful views and great services.",
+            "location": {
+                "long": 53.455,
+                "lat": 36.793
+            },
+            "stars": 5
+        },
+        {
+            "id": 18,
+            "name": "Niloofar",
+            "description": "A boutique hotel in Isfahan with a unique blend of elegance and comfort.",
+            "location": {
+                "long": 51.676,
+                "lat": 32.657
+            },
+            "stars": 3
+        },
+        {
+            "id": 19,
+            "name": "Sefid",
+            "description": "Sefid Hotel in Mashhad offers premium services and luxurious rooms.",
+            "location": {
+                "long": 59.574,
+                "lat": 36.295
+            },
+            "stars": 5
+        },
+        {
+            "id": 20,
+            "name": "Milad",
+            "description": "Milad Hotel in Tehran, located near the Milad Tower, offers stunning views.",
+            "location": {
+                "long": 51.289,
+                "lat": 35.750
+            },
+            "stars": 4
+        },
+        {
+            "id": 21,
+            "name": "Shahryar",
+            "description": "Shahryar Hotel in Tabriz with luxurious suites and amazing amenities.",
+            "location": {
+                "long": 46.294,
+                "lat": 38.073
+            },
+            "stars": 5
+        },
+        {
+            "id": 22,
+            "name": "Aseman",
+            "description": "Aseman Hotel in Kermanshah, known for its hospitality and beautiful architecture.",
+            "location": {
+                "long": 47.105,
+                "lat": 34.315
+            },
+            "stars": 4
+        },
+        {
+            "id": 23,
+            "name": "Sepehr",
+            "description": "Sepehr Hotel offers a luxurious stay with fantastic services in Shiraz.",
+            "location": {
+                "long": 53.715,
+                "lat": 29.577
+            },
+            "stars": 5
+        },
+        {
+            "id": 24,
+            "name": "Parsian Esteghlal",
+            "description": "Parsian Esteghlal Hotel is one of the top luxury hotels in Tehran.",
+            "location": {
+                "long": 51.398,
+                "lat": 35.748
+            },
+            "stars": 5
+        },
+        {
+            "id": 25,
+            "name": "Kish Paradise",
+            "description": "Kish Paradise Hotel offers a relaxing stay with excellent service.",
+            "location": {
+                "long": 53.975,
+                "lat": 26.533
+            },
+            "stars": 4
+        },
+        {
+            "id": 26,
+            "name": "Iran Hotel",
+            "description": "Iran Hotel is one of the oldest and most prestigious hotels in Tehran.",
+            "location": {
+                "long": 51.365,
+                "lat": 35.735
+            },
+            "stars": 3
+        },
+        {
+            "id": 27,
+            "name": "Zohre",
+            "description": "Zohre Hotel, located in Yazd, provides comfortable and affordable stays.",
+            "location": {
+                "long": 54.366,
+                "lat": 31.897
+            },
+            "stars": 3
+        },
+        {
+            "id": 28,
+            "name": "Shahab",
+            "description": "Shahab Hotel in Isfahan offers a great view of historical sites.",
+            "location": {
+                "long": 51.657,
+                "lat": 32.646
+            },
+            "stars": 4
+        },
+        {
+            "id": 29,
+            "name": "Golestan",
+            "description": "Golestan Hotel in Tabriz, providing excellent accommodation and facilities.",
+            "location": {
+                "long": 46.296,
+                "lat": 38.070
+            },
+            "stars": 4
+        },
+        {
+            "id": 30,
+            "name": "Amir Kabir",
+            "description": "Amir Kabir Hotel in Tehran, offering modern amenities and great service.",
+            "location": {
+                "long": 51.357,
+                "lat": 35.741
+            },
+            "stars": 3
+        }
+    ]
+}
