@@ -24,7 +24,8 @@ interface RequestParams<DomainService, RequestBody = unknown> {
 
 export interface GeneralService {
     serviceName: string
-    response: unknown
+    //TODO: Resolve this problem, it should be handle by generic type
+    response: any
     request: Request
     url: string
 }
