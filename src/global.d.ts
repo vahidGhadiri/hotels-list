@@ -12,7 +12,11 @@ declare global {
 
     type PathParams = Record<string, string | number>
 
+    type AdapterOptionType<ResponseType, T = ResponseType> = Omit<
+        UseQueryOptions<ResponseType, ErrorResponse, T>,
+        'queryKey' | 'queryFn'
+    >   
 };
 
 
-export {}
+export { }
