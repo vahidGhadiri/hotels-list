@@ -1,10 +1,8 @@
+import { useParams } from "react-router-dom";
+
 const HotelDetail = () => {
-  return (
-    <div>
-      Detail
-    </div>
-  )
-}
+  const { id } = useParams<{ id: string }>();
+  return <div>{id}</div>;
+};
 
-
-export default HotelDetail
+export default HotelDetail;

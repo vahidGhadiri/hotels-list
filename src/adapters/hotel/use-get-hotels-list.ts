@@ -1,15 +1,16 @@
-import { useQuery } from "@tanstack/react-query"
+import { useQuery } from "@tanstack/react-query";
 
-import type { HotelData } from "@use-cases/hotel"
-import hotelUseCase from "@use-cases/hotel"
+import type { HotelData, HotelsSearchQuery } from "@use-cases/hotel";
+import hotelUseCase from "@use-cases/hotel";
 
+const useGetHotelsList = (
+  query: HotelsSearchQuery,
+  options?: AdapterOptionType<HotelData[]>
+) =>
+  useQuery<HotelData[], ErrorResponse>({
+    queryFn: () => hotelUseCase().getHotelsList(query),
+    queryKey: ["HOTELS_LIST", query],
+    ...options,
+  });
 
-const useGetHotelsList = (options?: AdapterOptionType<HotelData[]>) =>
-    useQuery<HotelData[], ErrorResponse>({
-        queryFn: () => hotelUseCase().getHotelsList(),
-        queryKey: ["HOTELS_LIST"],
-        ...options
-    })
-
-
-export default useGetHotelsList
+export default useGetHotelsList;

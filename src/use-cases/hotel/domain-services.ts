@@ -1,7 +1,11 @@
-
-export const hotelServices = {
-    getHotelsList: "hotels/",
-    getHotelDetail: "hotels/:id"
+export interface HotelsSearchQuery {
+  description_like?: string;
+  name_like?: string;
 }
 
-export type HotelServices = typeof hotelServices
+export const hotelServices = {
+  getHotelsList: "hotels",
+  getHotelDetail: "hotels/:id",
+};
+
+export type HotelServices = typeof hotelServices;
