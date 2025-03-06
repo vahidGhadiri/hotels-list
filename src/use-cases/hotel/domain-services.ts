@@ -3,6 +3,10 @@ export interface HotelsSearchQuery {
   name_like?: string;
 }
 
+export interface HotelDetailParams {
+  id: string;
+}
+
 export const hotelServices = {
   getHotelsList: "hotels",
   getHotelDetail: "hotels/:id",

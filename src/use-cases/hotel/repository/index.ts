@@ -1,11 +1,16 @@
 import { IHttp } from "@infrastructure";
 
-import type { HotelServices, HotelsSearchQuery } from "../domain-services";
-import { HotelData } from "../entities";
+import type { HotelData } from "../entities";
+
+import type {
+  HotelsSearchQuery,
+  HotelDetailParams,
+  HotelServices,
+} from "../domain-services";
 
 export interface IHotelRepository {
-  getHotelsList: (params: HotelsSearchQuery) => Promise<HotelData[]>;
-  getHotelDetail: () => Promise<HotelData>;
+  getHotelsList: (query: HotelsSearchQuery) => Promise<HotelData[]>;
+  getHotelDetail: (pathParams: HotelDetailParams) => Promise<HotelData>;
 }
 
 export class HotelRepository implements IHotelRepository {
@@ -24,10 +29,11 @@ export class HotelRepository implements IHotelRepository {
     });
   };
 
-  getHotelDetail: IHotelRepository["getHotelDetail"] = () => {
+  getHotelDetail: IHotelRepository["getHotelDetail"] = (pathParams) => {
     return this.http.request({
       serviceName: "getHotelDetail",
       method: "GET",
+      pathParams,
     });
   };
 }

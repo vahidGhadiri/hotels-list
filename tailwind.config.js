@@ -33,9 +33,9 @@ module.exports = {
         "body-2": ["16px", { lineHeight: "26px", fontWeight: "400" }],
         "body-3": ["14px", { lineHeight: "26px", fontWeight: "600" }],
         "body-4": ["14px", { lineHeight: "26px", fontWeight: "400" }],
-        "caption-1": ["12px", { lineHeight: "28px", fontWeight: "600" }],
-        "caption-2": ["12px", { lineHeight: "28px", fontWeight: "400" }],
-        "caption-3": ["10px", { lineHeight: "28px", fontWeight: "600" }],
+        "caption-1": ["12px", { lineHeight: "18px", fontWeight: "600" }],
+        "caption-2": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+        "caption-3": ["10px", { lineHeight: "18px", fontWeight: "600" }],
       },
       spacing: {
         "header-height": "44px",

@@ -15,9 +15,9 @@ const HotelsList = () => {
   return (
     <div className="max-w-screen-sm mx-auto py-8">
       <Input
+        startIcon={{ name: "Search", size: 18, color: "gray" }}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Search Destination"
-        startIcon={{ name: "Search" }}
         className="mx-4"
         value={search}
       />

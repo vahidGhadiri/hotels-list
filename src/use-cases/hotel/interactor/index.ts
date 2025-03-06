@@ -1,10 +1,10 @@
-import type { HotelsSearchQuery } from "../domain-services";
+import type { HotelDetailParams, HotelsSearchQuery } from "../domain-services";
 import type { IHotelRepository } from "../repository";
 import type { HotelData } from "../entities";
 
 export interface IHotelInteractor {
   getHotelsList: (query: HotelsSearchQuery) => Promise<HotelData[]>;
-  getHotelDetail: () => Promise<HotelData>;
+  getHotelDetail: (params: HotelDetailParams) => Promise<HotelData>;
 }
 
 export default class HotelInteractor implements IHotelInteractor {
@@ -19,7 +19,7 @@ export default class HotelInteractor implements IHotelInteractor {
     return this.HotelRepository.getHotelsList(query);
   };
 
-  getHotelDetail: IHotelInteractor["getHotelDetail"] = () => {
-    return this.HotelRepository.getHotelDetail();
+  getHotelDetail: IHotelInteractor["getHotelDetail"] = (params) => {
+    return this.HotelRepository.getHotelDetail(params);
   };
 }

@@ -14,7 +14,7 @@ interface CardProps {
 const Card: FC<CardProps> = ({ location, price, image, name, onClick }) => {
   return (
     <div
-      className="w-full max-w-xs mx-auto rounded-xl overflow-hidden bg-white shadow-elevation-2"
+      className="w-full max-w-xs mx-auto rounded-s overflow-hidden bg-white shadow-elevation-1"
       onClick={onClick}
     >
       <div className="relative">
@@ -30,21 +30,22 @@ const Card: FC<CardProps> = ({ location, price, image, name, onClick }) => {
         </div>
 
         <div className="p-3">
-          <div className="flex justify-between items-start text-neutral text-body-3">
+          <div className="flex justify-between items-center text-neutral text-body-3">
+            <p className="truncate">{name}</p>
             <p>${price}</p>
-            <p>{name}</p>
           </div>
 
-          <div className="flex items-center justify-end  text-neutral">
-            <span className="text-caption-3">
-              {location.city}, {location.province}
-            </span>
+          <div className="flex items-center justify-start  text-neutral">
             <Icon
               name="LocationPin"
               className="mr-1"
-              mode="stroked"
-              size={14}
+              color="primary"
+              mode="filled"
+              size={12}
             />
+            <div className="text-caption-3">
+              {location.city}, {location.province}
+            </div>
           </div>
         </div>
       </div>

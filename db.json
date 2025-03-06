@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Parsian Azadi",
-      "description": "Parsian Azadi Hotel is one of the most prestigious hotels in Tehran.",
+      "description": "Parsian Azadi Hotel stands as one of the most prestigious and iconic hotels in Tehran, renowned for its blend of modern luxury and traditional Persian hospitality. Located in a prime area of the city, this five-star establishment offers spacious rooms, exquisite dining options, and top-tier amenities, making it a favorite among business travelers and tourists alike.",
       "location": {
         "long": 51.38,
         "lat": 35.734,
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "name": "Espinas Palace",
-      "description": "Espinas Palace Hotel is known for its luxurious rooms and services.",
+      "description": "Espinas Palace Hotel is a symbol of opulence in Tehran, celebrated for its luxurious rooms, exceptional services, and breathtaking views of the city skyline. This five-star hotel caters to guests seeking a lavish experience, featuring elegant interiors, gourmet restaurants, and a range of wellness facilities, ensuring an unforgettable stay.",
       "location": {
         "long": 51.372,
         "lat": 35.734,
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Tehran Grand",
-      "description": "Tehran Grand Hotel offers modern amenities and excellent service.",
+      "description": "Tehran Grand Hotel is a modern retreat that combines contemporary design with outstanding service, making it a top choice for visitors to the bustling capital. This four-star hotel boasts well-appointed rooms, a variety of dining options, and convenient access to Tehran’s key attractions, ensuring both comfort and convenience for its guests.",
       "location": {
         "long": 51.389,
         "lat": 35.702,
@@ -45,7 +45,7 @@
     {
       "id": 4,
       "name": "Laleh Hotel",
-      "description": "Laleh Hotel is a 4-star hotel offering high-end facilities and a central location.",
+      "description": "Laleh Hotel is a distinguished four-star property in Tehran, offering high-end facilities and a prime central location that appeals to both leisure and business travelers. Guests can enjoy beautifully designed rooms, excellent dining experiences, and proximity to major cultural and commercial hubs, all wrapped in a welcoming atmosphere.",
       "location": {
         "long": 51.402,
         "lat": 35.729,
@@ -59,7 +59,7 @@
     {
       "id": 5,
       "name": "Azadi Hotel",
-      "description": "Azadi Hotel offers great comfort and is located near Tehran's landmarks.",
+      "description": "Azadi Hotel offers a harmonious blend of comfort and convenience, situated close to some of Tehran’s most famous landmarks. This four-star hotel provides well-furnished rooms, attentive service, and a relaxing environment, making it an ideal base for exploring the vibrant city and its rich history.",
       "location": {
         "long": 51.387,
         "lat": 35.739,
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "name": "Novotel Tehran",
-      "description": "Novotel Tehran is a modern hotel with great facilities.",
+      "description": "Novotel Tehran is a sleek and modern hotel designed for travelers who value style, comfort, and functionality. This four-star property features state-of-the-art facilities, including spacious rooms, a fitness center, and excellent dining options, making it a perfect choice for both short stays and extended visits to the capital.",
       "location": {
         "long": 51.423,
         "lat": 35.702,
@@ -87,7 +87,7 @@
     {
       "id": 7,
       "name": "Esteghlal Hotel",
-      "description": "Esteghlal Hotel is one of the oldest hotels in Tehran, offering classic luxury.",
+      "description": "Esteghlal Hotel, one of Tehran’s oldest and most revered hotels, exudes classic luxury with a touch of historical charm. This five-star landmark offers elegantly appointed rooms, exceptional dining experiences, and a range of upscale amenities, appealing to guests who appreciate timeless sophistication and top-notch service.",
       "location": {
         "long": 51.404,
         "lat": 35.749,
@@ -101,7 +101,7 @@
     {
       "id": 8,
       "name": "Tajrish Hotel",
-      "description": "Tajrish Hotel offers a tranquil retreat with a stunning view of the Alborz mountains.",
+      "description": "Tajrish Hotel offers a serene and tranquil retreat in the northern part of Tehran, with stunning views of the majestic Alborz mountains. This four-star hotel combines modern comforts with a peaceful ambiance, featuring cozy rooms, excellent service, and easy access to the vibrant Tajrish bazaar and nearby attractions.",
       "location": {
         "long": 51.44,
         "lat": 35.85,
@@ -115,7 +115,7 @@
     {
       "id": 9,
       "name": "Meliá Tehran",
-      "description": "Meliá Tehran is a luxurious and modern hotel offering excellent service.",
+      "description": "Meliá Tehran is a luxurious and modern haven in the heart of the city, delivering exceptional service and a sophisticated experience for discerning travelers. This five-star hotel features stylishly designed rooms, gourmet dining options, and premium facilities, ensuring a memorable stay in Iran’s bustling capital.",
       "location": {
         "long": 51.385,
         "lat": 35.725,
@@ -129,7 +129,7 @@
     {
       "id": 10,
       "name": "Tehran International",
-      "description": "Tehran International Hotel is centrally located with easy access to the city's attractions.",
+      "description": "Tehran International Hotel is a centrally located gem, offering easy access to the city’s top attractions and cultural sites. This four-star property provides comfortable accommodations, friendly service, and a range of amenities, making it an excellent choice for travelers eager to explore Tehran’s dynamic offerings.",
       "location": {
         "long": 51.387,
         "lat": 35.736,
@@ -143,7 +143,7 @@
     {
       "id": 11,
       "name": "Simorgh Hotel",
-      "description": "Simorgh Hotel offers a comfortable stay with various amenities.",
+      "description": "Simorgh Hotel provides a cozy and comfortable stay in Tehran, equipped with a variety of amenities to meet the needs of modern travelers. This three-star hotel offers well-maintained rooms, a welcoming atmosphere, and a convenient location, making it a practical option for those exploring the city on a budget.",
       "location": {
         "long": 51.384,
         "lat": 35.718,
@@ -157,7 +157,7 @@
     {
       "id": 13,
       "name": "Sina Hotel",
-      "description": "Sina Hotel is a budget-friendly option offering basic facilities and great location.",
+      "description": "Sina Hotel is a budget-friendly option in Tehran, offering basic yet reliable facilities and a strategic location for easy city exploration. This two-star hotel provides clean and simple accommodations, friendly service, and great value, making it ideal for cost-conscious travelers seeking convenience.",
       "location": {
         "long": 51.376,
         "lat": 35.755,
@@ -171,7 +171,7 @@
     {
       "id": 14,
       "name": "Kowsar Hotel",
-      "description": "Kowsar Hotel is an affordable yet quality accommodation option in Tehran.",
+      "description": "Kowsar Hotel offers an affordable yet high-quality accommodation experience in Tehran, blending comfort with accessibility. This three-star hotel features modern rooms, attentive staff, and a location that makes it easy to discover the city’s vibrant streets and attractions, all at a reasonable price.",
       "location": {
         "long": 51.372,
         "lat": 35.762,
@@ -185,7 +185,7 @@
     {
       "id": 15,
       "name": "Niloofar Hotel",
-      "description": "Niloofar Hotel provides a comfortable stay with modern facilities.",
+      "description": "Niloofar Hotel provides a comfortable and contemporary stay in Tehran, equipped with modern facilities to ensure a pleasant visit. This three-star property offers well-designed rooms, a warm ambiance, and a convenient location, making it a solid choice for travelers seeking value and comfort.",
       "location": {
         "long": 51.376,
         "lat": 35.748,
@@ -199,7 +199,7 @@
     {
       "id": 16,
       "name": "Mehrabad Hotel",
-      "description": "Mehrabad Hotel is located close to Tehran's Mehrabad International Airport.",
+      "description": "Mehrabad Hotel is strategically located near Tehran’s Mehrabad International Airport, offering convenience for travelers with early flights or late arrivals. This three-star hotel provides comfortable accommodations, modern amenities, and a welcoming environment, making it a practical choice for those on the move.",
       "location": {
         "long": 51.305,
         "lat": 35.692,
@@ -213,7 +213,7 @@
     {
       "id": 17,
       "name": "Parsian Enghelab",
-      "description": "Parsian Enghelab is located in the heart of Tehran with convenient access to the city's attractions.",
+      "description": "Parsian Enghelab is a well-positioned hotel in the heart of Tehran, offering convenient access to the city’s key attractions and business districts. This four-star property features stylish rooms, excellent dining options, and a range of services, providing a balanced mix of comfort and practicality for its guests.",
       "location": {
         "long": 51.384,
         "lat": 35.703,
@@ -226,8 +226,8 @@
     },
     {
       "id": 18,
-      "name": "Grand Millennium Tehran",
-      "description": "Grand Millennium Tehran offers a luxurious stay with high-end services.",
+      "name": "Grand Millennium",
+      "description": "Grand Millennium Tehran redefines luxury with its high-end services and sophisticated design, offering an unparalleled stay in the capital. This five-star hotel boasts spacious and elegantly furnished rooms, gourmet dining experiences, and premium amenities, catering to guests who demand the very best.",
       "location": {
         "long": 51.417,
         "lat": 35.702,

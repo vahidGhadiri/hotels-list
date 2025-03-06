@@ -50,28 +50,26 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
   ) => {
     return (
       <div
-        dir="ltr"
         className={composeClassNames([
-          "flex items-center border border-gray text-secondary rounded-m p-4",
+          "flex items-center border border-gray text-secondary rounded-m px-4 py-2 text-caption-2",
           className,
         ])}
       >
         {startIcon && <Icon {...startIcon} className="mr-2" />}
-
         <input
-          ref={ref}
-          type={type}
-          value={value}
+          className="w-full outline-none"
           placeholder={placeholder}
           disabled={isDisabled}
           readOnly={isReadOnly}
-          name={name}
-          className="w-full outline-none"
-          onChange={onChange}
-          onFocus={onFocus}
           onBlur={onBlur}
+          value={value}
+          type={type}
+          name={name}
+          ref={ref}
           onKeyDown={onKeyDown}
+          onChange={onChange}
           onPaste={onPaste}
+          onFocus={onFocus}
         />
         {endElement && <span className="ml-2">{endElement}</span>}
       </div>

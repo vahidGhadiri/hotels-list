@@ -7,7 +7,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "json-server": "json-server --watch db.json --port 3000 --delay 1000",
+    "json-server": "json-server --watch db.json --port 3000 --delay 500",
     "update-icons": "npx @svgr/cli -d src/components/icons src/components/icons --typescript --no-dimensions"
   },
   "dependencies": {
