@@ -4,12 +4,14 @@ import { forwardRef } from "react";
 import { SpinnerLoading } from "@components";
 import { composeClassNames } from "@utils";
 
-export type ButtonSize = "big" | "medium" | "small";
+type ButtonSize = "big" | "medium" | "small";
+type ButtonMode = "primary" | "tertiary";
 
 export interface ButtonProps {
   onClick: MouseEventHandler<HTMLButtonElement>;
-  size?: ButtonSize;
   isLoading?: boolean;
+  size?: ButtonSize;
+  mode?: ButtonMode;
   label: string;
   isDisabled?: boolean;
   className?: string;
@@ -17,11 +19,24 @@ export interface ButtonProps {
 
 const Button = forwardRef(
   (
-    { isLoading, isDisabled, className, label, onClick }: ButtonProps,
+    {
+      isLoading,
+      isDisabled,
+      className,
+      label,
+      onClick,
+      mode = "primary",
+    }: ButtonProps,
     ref: ForwardedRef<HTMLButtonElement>
   ) => {
+    const buttonModeClassNames: { [key in ButtonMode]: string } = {
+      tertiary: "bg-white border border-primary text-primary",
+      primary: "bg-primary text-white",
+    };
+
     const buttonClassName = composeClassNames([
-      "bg-primary text-white p-4 rounded-m w-full",
+      "py-3 px-4 rounded-s w-full text-body-3",
+      buttonModeClassNames[mode],
       isDisabled && "bg-neutral",
       className,
     ]);

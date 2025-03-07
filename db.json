@@ -12,7 +12,42 @@
       },
       "stars": 5,
       "price": 200,
-      "image": "https://cdn.mehrbooking.net/persiatrip/Images/Hotels/tehran-parsian-azadi-hotel-facade4.jpg"
+      "image": "https://cdn.mehrbooking.net/persiatrip/Images/Hotels/tehran-parsian-azadi-hotel-facade4.jpg",
+      "reviews": [
+        {
+          "id": 1,
+          "user": {
+            "name": "Ali Rezaei",
+            "userId": "U001",
+            "avatar": "https://picsum.photos/id/237/200/200"
+          },
+          "rating": 5,
+          "comment": "Great hotel with amazing service and beautiful views!",
+          "date": "2024-12-01"
+        },
+        {
+          "id": 2,
+          "user": {
+            "name": "Sara Ahmadi",
+            "userId": "U002",
+            "avatar": "https://picsum.photos/id/1027/200/200"
+          },
+          "rating": 4,
+          "comment": "Very luxurious, but the breakfast could be better.",
+          "date": "2024-11-25"
+        },
+        {
+          "id": 3,
+          "user": {
+            "name": "Mohammad Hosseini",
+            "userId": "U003",
+            "avatar": "https://picsum.photos/id/1018/200/200"
+          },
+          "rating": 5,
+          "comment": "Perfect stay, highly recommend!",
+          "date": "2024-11-20"
+        }
+      ]
     },
     {
       "id": 2,
@@ -26,7 +61,31 @@
       },
       "stars": 5,
       "price": 220,
-      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1c/8c/39/cc/uninterrupted-city-view.jpg"
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1c/8c/39/cc/uninterrupted-city-view.jpg",
+      "reviews": [
+        {
+          "id": 4,
+          "user": {
+            "name": "Nima Karimi",
+            "userId": "U004",
+            "avatar": "https://picsum.photos/id/1025/200/200"
+          },
+          "rating": 5,
+          "comment": "Fantastic experience, worth every penny!",
+          "date": "2024-12-02"
+        },
+        {
+          "id": 5,
+          "user": {
+            "name": "Leila Mohammadi",
+            "userId": "U005",
+            "avatar": "https://picsum.photos/id/1011/200/200"
+          },
+          "rating": 4,
+          "comment": "Beautiful rooms, but staff could be friendlier.",
+          "date": "2024-11-28"
+        }
+      ]
     },
     {
       "id": 3,
@@ -40,7 +99,31 @@
       },
       "stars": 4,
       "price": 180,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjt7hiCr2kGVORnaq6L9E6_lMWun9FIfsvg&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTsjt7hiCr2kGVORnaq6L9E6_lMWun9FIfsvg&s",
+      "reviews": [
+        {
+          "id": 6,
+          "user": {
+            "name": "Hassan Jafari",
+            "userId": "U006",
+            "avatar": "https://picsum.photos/id/1005/200/200"
+          },
+          "rating": 4,
+          "comment": "Good location and clean rooms.",
+          "date": "2024-11-15"
+        },
+        {
+          "id": 7,
+          "user": {
+            "name": "Fatemeh Ghasemi",
+            "userId": "U007",
+            "avatar": "https://picsum.photos/id/1012/200/200"
+          },
+          "rating": 3,
+          "comment": "Decent stay, but parking was an issue.",
+          "date": "2024-11-10"
+        }
+      ]
     },
     {
       "id": 4,
@@ -54,7 +137,31 @@
       },
       "stars": 4,
       "price": 150,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcxfSqsFB89LDFngSEz2GohPgMUdrXQ-zO8w&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTcxfSqsFB89LDFngSEz2GohPgMUdrXQ-zO8w&s",
+      "reviews": [
+        {
+          "id": 8,
+          "user": {
+            "name": "Reza Shariati",
+            "userId": "U008",
+            "avatar": "https://picsum.photos/id/1009/200/200"
+          },
+          "rating": 5,
+          "comment": "Loved the ambiance and food!",
+          "date": "2024-12-05"
+        },
+        {
+          "id": 9,
+          "user": {
+            "name": "Maryam Sadeghi",
+            "userId": "U009",
+            "avatar": "https://picsum.photos/id/1020/200/200"
+          },
+          "rating": 4,
+          "comment": "Nice hotel, great value for money.",
+          "date": "2024-11-30"
+        }
+      ]
     },
     {
       "id": 5,
@@ -68,7 +175,31 @@
       },
       "stars": 4,
       "price": 160,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGEQVmA8O82fXoyCx65yM_vlr4ug-75iYRjw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQGEQVmA8O82fXoyCx65yM_vlr4ug-75iYRjw&s",
+      "reviews": [
+        {
+          "id": 10,
+          "user": {
+            "name": "Kaveh Bahrami",
+            "userId": "U010",
+            "avatar": "https://picsum.photos/id/1015/200/200"
+          },
+          "rating": 4,
+          "comment": "Comfortable stay, close to landmarks.",
+          "date": "2024-11-22"
+        },
+        {
+          "id": 11,
+          "user": {
+            "name": "Zahra Ebrahimi",
+            "userId": "U011",
+            "avatar": "https://picsum.photos/id/1021/200/200"
+          },
+          "rating": 5,
+          "comment": "Excellent service, will come back!",
+          "date": "2024-11-18"
+        }
+      ]
     },
     {
       "id": 6,
@@ -82,7 +213,31 @@
       },
       "stars": 4,
       "price": 190,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88W_v252rm0XhB0g1hAmf-rU5Bw1bQrferw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcT88W_v252rm0XhB0g1hAmf-rU5Bw1bQrferw&s",
+      "reviews": [
+        {
+          "id": 12,
+          "user": {
+            "name": "Behnam Pourali",
+            "userId": "U012",
+            "avatar": "https://picsum.photos/id/1003/200/200"
+          },
+          "rating": 4,
+          "comment": "Modern and clean, good gym.",
+          "date": "2024-12-03"
+        },
+        {
+          "id": 13,
+          "user": {
+            "name": "Shirin Ramezani",
+            "userId": "U013",
+            "avatar": "https://picsum.photos/id/1006/200/200"
+          },
+          "rating": 3,
+          "comment": "Nice rooms, but noisy at night.",
+          "date": "2024-11-27"
+        }
+      ]
     },
     {
       "id": 7,
@@ -96,7 +251,31 @@
       },
       "stars": 5,
       "price": 250,
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/bc/a5/f7/this-hotel-have-a-best.jpg?w=1200&h=-1&s=1"
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/bc/a5/f7/this-hotel-have-a-best.jpg?w=1200&h=-1&s=1",
+      "reviews": [
+        {
+          "id": 14,
+          "user": {
+            "name": "Hamed Ghaffari",
+            "userId": "U014",
+            "avatar": "https://picsum.photos/id/1019/200/200"
+          },
+          "rating": 5,
+          "comment": "A classic gem, amazing experience!",
+          "date": "2024-12-04"
+        },
+        {
+          "id": 15,
+          "user": {
+            "name": "Parisa Mousavi",
+            "userId": "U015",
+            "avatar": "https://picsum.photos/id/1022/200/200"
+          },
+          "rating": 4,
+          "comment": "Luxury at its best, but a bit pricey.",
+          "date": "2024-11-29"
+        }
+      ]
     },
     {
       "id": 8,
@@ -110,7 +289,31 @@
       },
       "stars": 4,
       "price": 210,
-      "image": "https://media-cdn.tripadvisor.com/media/photo-s/19/30/bd/cf/night-time-view-of-hotel.jpg"
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/19/30/bd/cf/night-time-view-of-hotel.jpg",
+      "reviews": [
+        {
+          "id": 16,
+          "user": {
+            "name": "Ehsan Tavakoli",
+            "userId": "U016",
+            "avatar": "https://picsum.photos/id/1008/200/200"
+          },
+          "rating": 5,
+          "comment": "Peaceful and scenic, loved the views!",
+          "date": "2024-12-01"
+        },
+        {
+          "id": 17,
+          "user": {
+            "name": "Laleh Shokri",
+            "userId": "U017",
+            "avatar": "https://picsum.photos/id/1016/200/200"
+          },
+          "rating": 4,
+          "comment": "Great location near Tajrish, very relaxing.",
+          "date": "2024-11-26"
+        }
+      ]
     },
     {
       "id": 9,
@@ -124,7 +327,31 @@
       },
       "stars": 5,
       "price": 230,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUK6ezwRenPdXDLhSiNa5U_zsHADk2sm_FlS1r_T0rXTUdX3t5I40fP6dkPPVa3ZaZcCs&usqp=CAU"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTUK6ezwRenPdXDLhSiNa5U_zsHADk2sm_FlS1r_T0rXTUdX3t5I40fP6dkPPVa3ZaZcCs&usqp=CAU",
+      "reviews": [
+        {
+          "id": 18,
+          "user": {
+            "name": "Amir Hosseinzadeh",
+            "userId": "U018",
+            "avatar": "https://picsum.photos/id/1023/200/200"
+          },
+          "rating": 5,
+          "comment": "Top-notch service, highly luxurious!",
+          "date": "2024-12-06"
+        },
+        {
+          "id": 19,
+          "user": {
+            "name": "Narges Azizi",
+            "userId": "U019",
+            "avatar": "https://picsum.photos/id/1001/200/200"
+          },
+          "rating": 4,
+          "comment": "Elegant and comfy, food was excellent.",
+          "date": "2024-11-23"
+        }
+      ]
     },
     {
       "id": 10,
@@ -138,7 +365,31 @@
       },
       "stars": 4,
       "price": 170,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohZG4K-A1X359eK31nZr65u_LH6Jk3-qpng&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTohZG4K-A1X359eK31nZr65u_LH6Jk3-qpng&s",
+      "reviews": [
+        {
+          "id": 20,
+          "user": {
+            "name": "Saeed Rahimi",
+            "userId": "U020",
+            "avatar": "https://picsum.photos/id/1002/200/200"
+          },
+          "rating": 4,
+          "comment": "Convenient location, good service.",
+          "date": "2024-11-19"
+        },
+        {
+          "id": 21,
+          "user": {
+            "name": "Roya Farhadi",
+            "userId": "U021",
+            "avatar": "https://picsum.photos/id/1010/200/200"
+          },
+          "rating": 3,
+          "comment": "Okay stay, but rooms need updating.",
+          "date": "2024-11-14"
+        }
+      ]
     },
     {
       "id": 11,
@@ -152,7 +403,31 @@
       },
       "stars": 3,
       "price": 140,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtTSOj7jFxBeUwI7VsmcWp5FwiDR7OnkK_Q&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQbtTSOj7jFxBeUwI7VsmcWp5FwiDR7OnkK_Q&s",
+      "reviews": [
+        {
+          "id": 22,
+          "user": {
+            "name": "Omid Gholami",
+            "userId": "U022",
+            "avatar": "https://picsum.photos/id/1004/200/200"
+          },
+          "rating": 4,
+          "comment": "Good value for the price.",
+          "date": "2024-12-07"
+        },
+        {
+          "id": 23,
+          "user": {
+            "name": "Mina Khosravi",
+            "userId": "U023",
+            "avatar": "https://picsum.photos/id/1013/200/200"
+          },
+          "rating": 3,
+          "comment": "Simple but clean, staff were nice.",
+          "date": "2024-11-21"
+        }
+      ]
     },
     {
       "id": 13,
@@ -166,7 +441,31 @@
       },
       "stars": 2,
       "price": 110,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn9uhne3IthJXWKAW56XcYIcdI11l5ygGd8g&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcRn9uhne3IthJXWKAW56XcYIcdI11l5ygGd8g&s",
+      "reviews": [
+        {
+          "id": 24,
+          "user": {
+            "name": "Kamran Yazdani",
+            "userId": "U024",
+            "avatar": "https://picsum.photos/id/1000/200/200"
+          },
+          "rating": 3,
+          "comment": "Basic but good for a short stay.",
+          "date": "2024-11-16"
+        },
+        {
+          "id": 25,
+          "user": {
+            "name": "Elahe Shariati",
+            "userId": "U025",
+            "avatar": "https://picsum.photos/id/1024/200/200"
+          },
+          "rating": 2,
+          "comment": "Cheap, but not very comfortable.",
+          "date": "2024-11-12"
+        }
+      ]
     },
     {
       "id": 14,
@@ -180,7 +479,31 @@
       },
       "stars": 3,
       "price": 130,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2zm1Z55gNtdogPkCHFhft7UgTuQb4Vr03qw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQ2zm1Z55gNtdogPkCHFhft7UgTuQb4Vr03qw&s",
+      "reviews": [
+        {
+          "id": 26,
+          "user": {
+            "name": "Babak Mousavi",
+            "userId": "U026",
+            "avatar": "https://picsum.photos/id/1014/200/200"
+          },
+          "rating": 4,
+          "comment": "Nice staff and clean rooms.",
+          "date": "2024-12-08"
+        },
+        {
+          "id": 27,
+          "user": {
+            "name": "Setareh Hosseini",
+            "userId": "U027",
+            "avatar": "https://picsum.photos/id/1026/200/200"
+          },
+          "rating": 3,
+          "comment": "Good for the price, but small rooms.",
+          "date": "2024-11-24"
+        }
+      ]
     },
     {
       "id": 15,
@@ -194,7 +517,31 @@
       },
       "stars": 3,
       "price": 120,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLac6ARAPvmqCk5XNPULXcPx0u6pbPK6LUag&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQLac6ARAPvmqCk5XNPULXcPx0u6pbPK6LUag&s",
+      "reviews": [
+        {
+          "id": 28,
+          "user": {
+            "name": "Javad Rahmani",
+            "userId": "U028",
+            "avatar": "https://picsum.photos/id/1007/200/200"
+          },
+          "rating": 4,
+          "comment": "Cozy and affordable, good stay.",
+          "date": "2024-11-17"
+        },
+        {
+          "id": 29,
+          "user": {
+            "name": "Hanieh Ghaffari",
+            "userId": "U029",
+            "avatar": "https://picsum.photos/id/1028/200/200"
+          },
+          "rating": 3,
+          "comment": "Okay, but Wi-Fi was slow.",
+          "date": "2024-11-13"
+        }
+      ]
     },
     {
       "id": 16,
@@ -208,7 +555,31 @@
       },
       "stars": 3,
       "price": 130,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaToCw62VA6JCEcA0A4XI6pY8wBSdtsy-SOg&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTaToCw62VA6JCEcA0A4XI6pY8wBSdtsy-SOg&s",
+      "reviews": [
+        {
+          "id": 30,
+          "user": {
+            "name": "Arash Kiani",
+            "userId": "U030",
+            "avatar": "https://picsum.photos/id/1029/200/200"
+          },
+          "rating": 4,
+          "comment": "Perfect for airport access, comfy beds.",
+          "date": "2024-12-09"
+        },
+        {
+          "id": 31,
+          "user": {
+            "name": "Shiva Pourali",
+            "userId": "U031",
+            "avatar": "https://picsum.photos/id/1030/200/200"
+          },
+          "rating": 3,
+          "comment": "Convenient, but food options limited.",
+          "date": "2024-11-28"
+        }
+      ]
     },
     {
       "id": 17,
@@ -222,7 +593,31 @@
       },
       "stars": 4,
       "price": 160,
-      "image": "https://hotelyar.com/pic/2437small.jpg"
+      "image": "https://hotelyar.com/pic/2437small.jpg",
+      "reviews": [
+        {
+          "id": 32,
+          "user": {
+            "name": "Mehdi Shokri",
+            "userId": "U032",
+            "avatar": "https://picsum.photos/id/1031/200/200"
+          },
+          "rating": 4,
+          "comment": "Great location, friendly staff.",
+          "date": "2024-11-11"
+        },
+        {
+          "id": 33,
+          "user": {
+            "name": "Nasrin Azizi",
+            "userId": "U033",
+            "avatar": "https://picsum.photos/id/1032/200/200"
+          },
+          "rating": 5,
+          "comment": "Really enjoyed my stay here!",
+          "date": "2024-11-07"
+        }
+      ]
     },
     {
       "id": 18,
@@ -236,7 +631,31 @@
       },
       "stars": 5,
       "price": 260,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxuRYSsPplyWjDJCSntRuXCIUHY6TmOEqFwQ&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQxuRYSsPplyWjDJCSntRuXCIUHY6TmOEqFwQ&s",
+      "reviews": [
+        {
+          "id": 34,
+          "user": {
+            "name": "Farhad Tavakoli",
+            "userId": "U034",
+            "avatar": "https://picsum.photos/id/1033/200/200"
+          },
+          "rating": 5,
+          "comment": "Luxury at its finest, amazing food!",
+          "date": "2024-12-10"
+        },
+        {
+          "id": 35,
+          "user": {
+            "name": "Golnaz Rahimi",
+            "userId": "U035",
+            "avatar": "https://picsum.photos/id/1035/200/200"
+          },
+          "rating": 4,
+          "comment": "Stunning hotel, but pricey.",
+          "date": "2024-11-25"
+        }
+      ]
     }
   ]
 }
