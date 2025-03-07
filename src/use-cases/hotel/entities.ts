@@ -10,7 +10,7 @@ export type User = {
   avatar: string;
 };
 
-export type Review = {
+export type UserReview = {
   comment: string;
   rating: number;
   date: string;
@@ -19,9 +19,9 @@ export type Review = {
 };
 
 export type HotelData = {
+  reviews: UserReview[];
   description: string;
   location: Location;
-  reviews: Review[];
   price: number;
   stars: number;
   image: string;

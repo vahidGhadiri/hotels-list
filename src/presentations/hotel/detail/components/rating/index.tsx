@@ -1,13 +1,14 @@
-import { Icon } from "@components";
-import { Review } from "@use-cases/hotel";
 import type { FC } from "react";
 
+import { UserReview } from "@use-cases/hotel";
+import { Icon } from "@components";
+
 interface DetailRateProps {
-  reviews: Review[];
+  reviews?: UserReview[];
   maxAvatars?: number;
 }
 
-const DetailRate: FC<DetailRateProps> = ({ reviews = [], maxAvatars = 3 }) => {
+const Rating: FC<DetailRateProps> = ({ reviews = [], maxAvatars = 3 }) => {
   const averageRating =
     reviews.length > 0
       ? (
@@ -30,7 +31,6 @@ const DetailRate: FC<DetailRateProps> = ({ reviews = [], maxAvatars = 3 }) => {
             <img
               key={index}
               src={review.user.avatar || "/placeholder.svg?height=24&width=24"}
-              alt={review.user.name}
               className="w-6 h-6 rounded-full border-2 border-white object-cover"
             />
           ))}
@@ -60,4 +60,4 @@ const DetailRate: FC<DetailRateProps> = ({ reviews = [], maxAvatars = 3 }) => {
   );
 };
 
-export default DetailRate;
+export default Rating;

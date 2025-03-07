@@ -1,13 +1,13 @@
-import type { Review } from "@use-cases/hotel";
-import { FC } from "react";
+import type { FC } from "react";
+import type { UserReview } from "@use-cases/hotel";
 
 interface ReviewProps {
-  reviews?: Review[];
+  reviews?: UserReview[];
 }
 
 const Review: FC<ReviewProps> = ({ reviews }) => {
   return (
-    <div>
+    <>
       {reviews?.map((review) => (
         <div className="py-3 border-b border-b-gray border-opacity-25">
           <div className="text-caption-1 flex justify-between">
@@ -19,7 +19,7 @@ const Review: FC<ReviewProps> = ({ reviews }) => {
           </p>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

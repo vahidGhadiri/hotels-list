@@ -1,7 +1,7 @@
 interface CssExports {
-    onNavigationMenu: string
-    noHeader: string
-    highPriorityBottomSheet: string
+  highPriorityBottomSheet: string;
+  onNavigationMenu: string;
+  noHeader: string;
 }
-export const cssExports: CssExports
-export default cssExports
+export const cssExports: CssExports;
+export default cssExports;

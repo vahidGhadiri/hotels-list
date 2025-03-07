@@ -1,9 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useGetHotelDetail } from "@adapters/hotel";
-import { JSX, useState } from "react";
+import { useGetHotelDetail, useGetHotelsList } from "@adapters/hotel";
+import { JSX, useMemo, useState } from "react";
 
-import { BottomSheet, QueryStatus, Tabs } from "@components";
-const tabs = ["overview", "maps", "comments"];
+import { BottomSheet, Map, QueryStatus, Tabs } from "@components";
+
+const DEFAULT_CENTER_LOCATION = [35.6892, 51.389];
+const DETAIL_TABS = ["overview", "maps", "comments"];
 
 import {
   BottomSheetFooter,
@@ -11,26 +13,46 @@ import {
   DetailHeader,
   Overview,
   Review,
-  Rate,
+  Rating,
 } from "./components";
 
 const HotelDetail = () => {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+
   const { data, status } = useGetHotelDetail({ id });
+  const { data: hotelsList } = useGetHotelsList({});
 
   const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(true);
-  const [activeTab, setActiveTab] = useState<(typeof tabs)[number]>("overview");
-  const navigate = useNavigate();
+  const [activeTab, setActiveTab] =
+    useState<(typeof DETAIL_TABS)[number]>("overview");
+
+  const hotelsLocationList = useMemo(() => {
+    return (
+      hotelsList?.map(({ location, name, image }) => ({
+        position: [location.lat, location.long] as [number, number],
+        popup: { title: name, image: image },
+      })) ?? []
+    );
+  }, [hotelsList]);
 
   const onBottomSheetDismiss = () => {
     setIsBottomSheetOpen(false);
     navigate(-1);
   };
 
-  const tabMapObject: { [key in (typeof tabs)[number]]: JSX.Element } = {
+  const tabMapObject: { [key in (typeof DETAIL_TABS)[number]]: JSX.Element } = {
     overview: <Overview description={data?.description} />,
     comments: <Review reviews={data?.reviews} />,
-    maps: <div>"نقشه هتل"</div>,
+    maps: (
+      <Map
+        markers={hotelsLocationList}
+        center={[
+          data?.location.lat ?? DEFAULT_CENTER_LOCATION[0],
+          data?.location.long ?? DEFAULT_CENTER_LOCATION[1],
+        ]}
+      />
+    ),
   };
   return (
     <QueryStatus status={status}>
@@ -46,6 +68,7 @@ const HotelDetail = () => {
           <BottomSheet
             snapPoints={({ maxHeight }) => [maxHeight * 0.8, maxHeight * 0.9]}
             defaultSnap={({ maxHeight }) => maxHeight * 0.6}
+            isExpandOnContentDrag={false}
             onDismiss={onBottomSheetDismiss}
             isOpen={isBottomSheetOpen}
             footer={<BottomSheetFooter onCancelClick={() => navigate(-1)} />}
@@ -55,14 +78,12 @@ const HotelDetail = () => {
               price={data?.price}
               name={data?.name}
             />
-            {/* <Rate star={data?.stars} reviewedLength={data?.reviews?.length} avatarSrc={data?.reviews.}/> */}
-
-            <Rate reviews={data?.reviews} star={data?.stars} />
+            <Rating reviews={data?.reviews} />
             <Tabs
-              className="mt-6"
               onTabChange={setActiveTab}
               defaultTab={activeTab}
-              tabs={tabs}
+              tabs={DETAIL_TABS}
+              className="mt-6"
             />
             {tabMapObject[activeTab]}
           </BottomSheet>

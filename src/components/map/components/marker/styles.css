@@ -1,0 +1,10 @@
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  border-radius: 4px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}

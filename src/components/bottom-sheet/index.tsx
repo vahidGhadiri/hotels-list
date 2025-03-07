@@ -71,7 +71,7 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
       footer={footer}
       open={isOpen}
     >
-      <div className="content px-8 mb-20">{children}</div>
+      <div className="content px-8">{children}</div>
     </SpringBottomSheet>
   );
 };
