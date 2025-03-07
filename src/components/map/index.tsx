@@ -14,7 +14,6 @@ interface MapProps {
 const Map: FC<MapProps> = ({ markers, center }) => {
   const [isMounted, setIsMounted] = useState<boolean>(false);
 
-  console.log(markers);
   useEffect(() => {
     setIsMounted(true);
     document.documentElement.lang = "en";

@@ -29,16 +29,20 @@ const HotelDetail = () => {
 
   const hotelsLocationList = useMemo(() => {
     return (
-      hotelsList?.map(({ location, name, image }) => ({
+      hotelsList?.map(({ location, name, image, id }) => ({
         position: [location.lat, location.long] as [number, number],
-        popup: { title: name, image: image },
+        popup: {
+          onClick: () => navigate(`/hotels/${id}`),
+          title: name,
+          image,
+        },
       })) ?? []
     );
-  }, [hotelsList]);
+  }, [hotelsList, navigate]);
 
   const onBottomSheetDismiss = () => {
     setIsBottomSheetOpen(false);
-    navigate(-1);
+    navigate("/");
   };
 
   const tabMapObject: { [key in (typeof DETAIL_TABS)[number]]: JSX.Element } = {
