@@ -70,12 +70,12 @@ const HotelDetail = () => {
           />
 
           <BottomSheet
-            snapPoints={({ maxHeight }) => [maxHeight * 0.8, maxHeight * 0.9]}
+            snapPoints={({ maxHeight }) => [maxHeight * 0.7, maxHeight * 0.7]}
             defaultSnap={({ maxHeight }) => maxHeight * 0.6}
             isExpandOnContentDrag={false}
             onDismiss={onBottomSheetDismiss}
             isOpen={isBottomSheetOpen}
-            footer={<BottomSheetFooter onCancelClick={() => navigate(-1)} />}
+            footer={<BottomSheetFooter onCancelClick={() => navigate("/")} />}
           >
             <BottomSheetHeader
               location={data?.location}
