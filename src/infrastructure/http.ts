@@ -69,19 +69,16 @@ export class Http<DomainService extends GeneralDomainService>
     }
   }
 
-  async request<Service extends GeneralService, MockResponse = unknown>(
-    {
-      query,
-      method,
-      requestBody,
-      pathParams,
-      baseUrl,
-      serviceName,
-    }: RequestParams<DomainService>,
-    mockDataOptions?: { responseBody: MockResponse }
-  ): Promise<Service["response"] | MockResponse> {
-    if (mockDataOptions && mockDataOptions.responseBody)
-      return mockDataOptions.responseBody;
+  async request<Service extends GeneralService, MockResponse = unknown>({
+    serviceName,
+    requestBody,
+    pathParams,
+    baseUrl,
+    method,
+    query,
+  }: RequestParams<DomainService>): Promise<
+    Service["response"] | MockResponse
+  > {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), REQUEST_DURATION);
     const serviceEndpoint = this.domainService[serviceName];
@@ -93,7 +90,6 @@ export class Http<DomainService extends GeneralDomainService>
       query,
     });
 
-    console.log(this.url);
     try {
       const response = await fetch(this.url, {
         body: JSON.stringify(requestBody),

@@ -21,7 +21,7 @@ const HotelDetail = () => {
   const navigate = useNavigate();
 
   const { data, status } = useGetHotelDetail({ id });
-  const { data: hotelsList } = useGetHotelsList({});
+  const { data: hotelsList } = useGetHotelsList();
 
   const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(true);
   const [activeTab, setActiveTab] =

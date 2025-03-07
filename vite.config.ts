@@ -1,11 +1,52 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 import path from "path";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: "autoUpdate",
+      manifest: {
+        description: "A task management app built with React and Vite",
+        short_name: "Entrance Task",
+        name: "Entrance Task",
+      },
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: /\/api\/.*/,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "api-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            urlPattern: /\.(?:js|css|html|woff?|ttf|svg)$/,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "assets-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60, //
+              },
+            },
+          },
+        ],
+        globPatterns: ["**/*.{js,css,html}"],
+        globIgnores: ["**/node_modules/**/*"],
+      },
+    }),
+  ],
   server: {
-    host: "0.0.0.0",
     port: 8080,
     open: true,
   },

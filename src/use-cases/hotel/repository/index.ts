@@ -9,8 +9,8 @@ import type {
 } from "../domain-services";
 
 export interface IHotelRepository {
-  getHotelsList: (query: HotelsSearchQuery) => Promise<HotelData[]>;
   getHotelDetail: (pathParams: HotelDetailParams) => Promise<HotelData>;
+  getHotelsList: (query?: HotelsSearchQuery) => Promise<HotelData[]>;
 }
 
 export class HotelRepository implements IHotelRepository {
@@ -21,7 +21,6 @@ export class HotelRepository implements IHotelRepository {
   }
 
   getHotelsList: IHotelRepository["getHotelsList"] = async (query) => {
-    console.log("searchQuery", query);
     return this.http.request({
       serviceName: "getHotelsList",
       method: "GET",
