@@ -27,8 +27,8 @@ const HotelDetail = () => {
   const [activeTab, setActiveTab] =
     useState<(typeof DETAIL_TABS)[number]>("overview");
 
-  const hotelsLocationList = useMemo(() => {
-    return (
+  const hotelsLocationList = useMemo(
+    () =>
       hotelsList?.map(({ location, name, image, id }) => ({
         position: [location.lat, location.long] as [number, number],
         popup: {
@@ -36,9 +36,9 @@ const HotelDetail = () => {
           title: name,
           image,
         },
-      })) ?? []
-    );
-  }, [hotelsList, navigate]);
+      })) ?? [],
+    [hotelsList, navigate]
+  );
 
   const onBottomSheetDismiss = () => {
     setIsBottomSheetOpen(false);
@@ -73,8 +73,8 @@ const HotelDetail = () => {
             snapPoints={({ maxHeight }) => [maxHeight * 0.7, maxHeight * 0.7]}
             defaultSnap={({ maxHeight }) => maxHeight * 0.6}
             isExpandOnContentDrag={false}
-            onDismiss={onBottomSheetDismiss}
             isOpen={isBottomSheetOpen}
+            onDismiss={onBottomSheetDismiss}
             footer={<BottomSheetFooter onCancelClick={() => navigate("/")} />}
           >
             <BottomSheetHeader

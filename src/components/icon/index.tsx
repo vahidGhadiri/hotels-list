@@ -18,6 +18,7 @@ export type IconColor =
   | "alert"
   | "white"
   | "gray"
+  | "star"
   | "none";
 
 export interface IconProps {
@@ -49,6 +50,7 @@ const Icon = forwardRef<SVGSVGElement, IconProps>(
       alert: "text-alert",
       white: "text-white",
       gray: "text-neutral",
+      star: "text-yellow-400",
       none: "",
     };
     const SelectedIcon = mode === "stroked" ? stroked[name] : filled[name];

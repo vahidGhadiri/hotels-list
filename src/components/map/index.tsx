@@ -28,7 +28,7 @@ const Map: FC<MapProps> = ({ markers, center }) => {
   }
 
   return (
-    <div className="flex justify-center items-center rounded-s overflow-hidden shadow-lg">
+    <div className="flex justify-center items-center rounded-s overflow-hidden mb-4">
       <MapContainer
         className="w-full h-[320px]"
         attributionControl={true}
