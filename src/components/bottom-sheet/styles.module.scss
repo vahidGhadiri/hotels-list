@@ -13,7 +13,6 @@ div[data-rsbs-root] {
   div[data-rsbs-header] {
     padding-top: 15px;
     margin-top: 6px;
-
     &::before {
       top: 12px;
       width: 36px;
@@ -27,36 +26,8 @@ div[data-rsbs-root] {
   pointer-events: none !important;
 }
 
-[data-rsbs-footer] {
-  &::after {
-    content: "";
-    width: 100vw;
-    height: 20px;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 75px;
-    right: 0;
-  }
-}
-
-.onNavigationMenu {
-  div[data-rsbs-overlay] {
-    &::after {
-      content: "";
-      background-color: #fff;
-      height: 800px;
-      bottom: 0;
-      position: absolute;
-      left: 0;
-      right: 0;
-      transform: translateY(100%);
-    }
-  }
-
-  div[data-rsbs-backdrop] {
-    pointer-events: visible;
-  }
+[data-rsbs-root] {
+  background-color: red !important;
 }
 
 div[data-rsbs-header] {
@@ -66,12 +37,6 @@ div[data-rsbs-header] {
 div[data-rsbs-overlay][data-rsbs-overlay] {
   box-shadow: none;
   background-color: #fff;
-}
-
-.highPriorityBottomSheet {
-  div[data-rsbs-backdrop] {
-    pointer-events: visible;
-  }
 }
 
 .noHeader {

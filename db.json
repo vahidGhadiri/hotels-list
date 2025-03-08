@@ -12,7 +12,7 @@
       },
       "stars": 5,
       "price": 200,
-      "image": "https://cdn.mehrbooking.net/persiatrip/Images/Hotels/tehran-parsian-azadi-hotel-facade4.jpg",
+      "image": "/assets/hotels/parsian-azadi.jpg",
       "reviews": [
         {
           "id": 1,
@@ -61,7 +61,7 @@
       },
       "stars": 5,
       "price": 220,
-      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1c/8c/39/cc/uninterrupted-city-view.jpg",
+      "image": "/assets/hotels/espinas-palace.jpg",
       "reviews": [
         {
           "id": 4,
@@ -99,7 +99,7 @@
       },
       "stars": 4,
       "price": 180,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTsjt7hiCr2kGVORnaq6L9E6_lMWun9FIfsvg&s",
+      "image": "/assets/hotels/tehran-grand.jpg",
       "reviews": [
         {
           "id": 6,
@@ -137,7 +137,7 @@
       },
       "stars": 4,
       "price": 150,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTcxfSqsFB89LDFngSEz2GohPgMUdrXQ-zO8w&s",
+      "image": "/assets/hotels/laleh-hotel.jpg",
       "reviews": [
         {
           "id": 8,
@@ -175,7 +175,7 @@
       },
       "stars": 4,
       "price": 160,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQGEQVmA8O82fXoyCx65yM_vlr4ug-75iYRjw&s",
+      "image": "/assets/hotels/azadi-hotel.jpg",
       "reviews": [
         {
           "id": 10,
@@ -213,7 +213,7 @@
       },
       "stars": 4,
       "price": 190,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcT88W_v252rm0XhB0g1hAmf-rU5Bw1bQrferw&s",
+      "image": "/assets/hotels/novotel.jpg",
       "reviews": [
         {
           "id": 12,
@@ -251,7 +251,7 @@
       },
       "stars": 5,
       "price": 250,
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/bc/a5/f7/this-hotel-have-a-best.jpg?w=1200&h=-1&s=1",
+      "image": "/assets/hotels/esteghlal.jpg",
       "reviews": [
         {
           "id": 14,
@@ -289,7 +289,7 @@
       },
       "stars": 4,
       "price": 210,
-      "image": "https://media-cdn.tripadvisor.com/media/photo-s/19/30/bd/cf/night-time-view-of-hotel.jpg",
+      "image": "/assets/hotels/tajrish.jpg",
       "reviews": [
         {
           "id": 16,
@@ -327,7 +327,7 @@
       },
       "stars": 5,
       "price": 230,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTUK6ezwRenPdXDLhSiNa5U_zsHADk2sm_FlS1r_T0rXTUdX3t5I40fP6dkPPVa3ZaZcCs&usqp=CAU",
+      "image": "/assets/hotels/meila.jpg",
       "reviews": [
         {
           "id": 18,
@@ -365,7 +365,7 @@
       },
       "stars": 4,
       "price": 170,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTohZG4K-A1X359eK31nZr65u_LH6Jk3-qpng&s",
+      "image": "/assets/hotels/tehran-international.jpg",
       "reviews": [
         {
           "id": 20,
@@ -403,7 +403,7 @@
       },
       "stars": 3,
       "price": 140,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQbtTSOj7jFxBeUwI7VsmcWp5FwiDR7OnkK_Q&s",
+      "image": "/assets/hotels/simorgh.jpg",
       "reviews": [
         {
           "id": 22,
@@ -441,7 +441,7 @@
       },
       "stars": 2,
       "price": 110,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcRn9uhne3IthJXWKAW56XcYIcdI11l5ygGd8g&s",
+      "image": "/assets/hotels/sina.jpg",
       "reviews": [
         {
           "id": 24,
@@ -479,7 +479,7 @@
       },
       "stars": 3,
       "price": 130,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQ2zm1Z55gNtdogPkCHFhft7UgTuQb4Vr03qw&s",
+      "image": "/assets/hotels/kowsar.jpg",
       "reviews": [
         {
           "id": 26,
@@ -517,7 +517,7 @@
       },
       "stars": 3,
       "price": 120,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQLac6ARAPvmqCk5XNPULXcPx0u6pbPK6LUag&s",
+      "image": "/assets/hotels/niloofar.jpg",
       "reviews": [
         {
           "id": 28,
@@ -555,7 +555,7 @@
       },
       "stars": 3,
       "price": 130,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcTaToCw62VA6JCEcA0A4XI6pY8wBSdtsy-SOg&s",
+      "image": "/assets/hotels/mehrabad.jpg",
       "reviews": [
         {
           "id": 30,
@@ -593,7 +593,7 @@
       },
       "stars": 4,
       "price": 160,
-      "image": "https://hotelyar.com/pic/2437small.jpg",
+      "image": "/assets/hotels/enghelab.jpg",
       "reviews": [
         {
           "id": 32,
@@ -631,7 +631,7 @@
       },
       "stars": 5,
       "price": 260,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn9GcQxuRYSsPplyWjDJCSntRuXCIUHY6TmOEqFwQ&s",
+      "image": "/assets/hotels/grand-millenium.jpg",
       "reviews": [
         {
           "id": 34,

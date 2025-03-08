@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import type { FC, ReactNode } from "react";
 import { BottomSheet as SpringBottomSheet } from "react-spring-bottom-sheet";
 import "react-spring-bottom-sheet/dist/style.css";
 import {
@@ -29,7 +29,7 @@ export interface BottomSheetProps {
   defaultSnap?: (state: DefaultSnapProps) => number;
 }
 
-const BottomSheet: React.FC<BottomSheetProps> = ({
+const BottomSheet: FC<BottomSheetProps> = ({
   isExpandOnContentDrag = false,
   hasInitialTransition = true,
   isShowTopHandler = true,
@@ -59,17 +59,17 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
     <SpringBottomSheet
       skipInitialTransition={!hasInitialTransition}
       expandOnContentDrag={isExpandOnContentDrag}
-      onSpringCancel={onSwipeAnimationCancel}
-      onSpringStart={onSwipeAnimationStart}
-      defaultSnap={defaultSnap}
       onSpringEnd={onSwipeAnimationEnd}
       className={bottomSheetClassNames}
+      defaultSnap={defaultSnap}
       snapPoints={snapPoints}
-      scrollLocking={true}
-      onDismiss={handleOnDismiss}
       maxHeight={maxHeight}
+      scrollLocking={true}
       footer={footer}
       open={isOpen}
+      onSpringCancel={onSwipeAnimationCancel}
+      onSpringStart={onSwipeAnimationStart}
+      onDismiss={handleOnDismiss}
     >
       <div className="content px-8">{children}</div>
     </SpringBottomSheet>
