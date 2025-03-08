@@ -39,6 +39,13 @@ div[data-rsbs-overlay][data-rsbs-overlay] {
   background-color: #fff;
 }
 
+[data-rsbs-overlay] {
+  max-width: 480px !important;
+  margin: 0 auto !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
 .noHeader {
   div[data-rsbs-header] {
     display: none;
