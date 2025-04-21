@@ -17,4 +17,9 @@ declare global {
   >;
 }
 
-export {};
+export { };
+
+
+export type Sample {
+  sample: any
+}
